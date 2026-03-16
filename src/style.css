@@ -665,15 +665,6 @@ footer a:hover {
 }
 
 /* BANNER DE URGENCIA */
-.urgencia-banner {
-  background: #000000; /* Negro solicitado */
-  color: #FFFFFF;
-  text-align: center;
-  padding: 0.8rem;
-  font-weight: 800;
-  font-size: 1.1rem;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
 
 /* SECCIÓN TRUST/CONFIANZA */
 .trust-section {
