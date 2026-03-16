@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GANIVA | Ingeniería Pura para el Campo</title>
+    <meta name="description" content="Especialistas en estructuras metálicas, maquinaria y automatización agrícola. Hecho para durar.">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="urgencia-banner">
+        🚀 ¿Avería urgente? Te respondemos por WhatsApp en menos de 2 horas
+    </div>
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-img-container">
+                    <img src="./public/images/logo-ganiva.png" alt="GANIVA Logo">
+                </div>
+                GANIVA <span>AGRICULTURA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="background-image: url('./public/images/hero-bg-final.png');">
+        <div class="container">
+            <div class="hero-content" data-aos>
+                <span class="section-tag" style="color: var(--white); opacity: 0.8;">Ingeniería Industrial Agrícola</span>
+                <h1 class="text-reveal"><span>Construyendo el</span> <br><span style="color: var(--primary)">Futuro del Campo</span></h1>
+                <p>Especialistas en estructuras, maquinaria y automatización. Soluciones robustas diseñadas bajo un estándar: <strong>Hecho para durar.</strong></p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://wa.me/34685354090" class="btn btn-primary btn-pulse">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        Presupuesto Directo
+                    </a>
+                    <a href="#" class="btn btn-glass" onclick="openPdfModal('CATALOGO_2026.pdf')">Descargar Catálogo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="position: relative; margin-bottom: 5rem;">
+        <div class="stats-grid" data-aos>
+            <div class="stat-item">
+                <h2 class="counter" data-target="15">0</h2>
+                <p>Años de Experiencia</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="counter" data-target="450">0</h2>
+                <p>Proyectos Ejecutados</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="counter" data-target="120">0</h2>
+                <p>Clientes Activos</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="counter" data-target="98">0</h2>
+                <p>% Satisfacción</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="pilares">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 5rem;" data-aos>
+                <span class="section-tag">Nuestro Valor</span>
+                <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">Ingeniería de Inversión Inteligente</h2>
+                <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; opacity: 0.8;">No fabricamos por fabricar. Diseñamos soluciones que optimizan su inversión, reducen el mantenimiento y garantizan una vida útil superior.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;">
+                <!-- Tarjetas refinadas -->
+                <div class="card" data-aos>
+                    <div class="icon-box">🏗️</div>
+                    <h3 style="margin-bottom: 1rem;">Optimización de Instalaciones</h3>
+                    <p>Adaptamos naves y cerramientos existentes para mejorar el flujo de trabajo sin costes innecesarios.</p>
+                </div>
+                <div class="card" data-aos>
+                    <div class="icon-box">⚙️</div>
+                    <h3 style="margin-bottom: 1rem;">Maquinaria y Refuerzo</h3>
+                    <p>Sabemos dónde sufren las máquinas. Aplicamos refuerzos técnicos y fabricamos aperos indestructibles.</p>
+                </div>
+                <div class="card" data-aos>
+                    <div class="icon-box">🔋</div>
+                    <h3 style="margin-bottom: 1rem;">Automatización Real</h3>
+                    <p>Desde tolvas inteligentes hasta cintas de alta resistencia. Tecnología aplicada a la escala de su explotación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" style="background: var(--light);">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem;" data-aos>
+                <div>
+                    <span class="section-tag">Portafolio</span>
+                    <h2 style="font-size: 2.8rem;">Resultados en el Terreno</h2>
+                </div>
+                <a href="#" class="btn btn-primary" onclick="openPdfModal('FICHAS.pdf')">Ver Fichas Técnicas</a>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-1.jpg')">
+                    <img src="./public/images/fichas-1.jpg" alt="Proyecto 1">
+                    <div class="portfolio-overlay">
+                        <span style="font-size: 0.8rem; opacity: 0.7;">REPARACIÓN CRÍTICA</span>
+                        <h3 style="font-size: 1.2rem;">Refuerzo de Chasis de Apero</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-2.jpg')">
+                    <img src="./public/images/fichas-2.jpg" alt="Proyecto 2">
+                    <div class="portfolio-overlay">
+                        <span style="font-size: 0.8rem; opacity: 0.7;">FABRICACIÓN NUEVA</span>
+                        <h3 style="font-size: 1.2rem;">Maquinaria de Carga Personalizada</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-3.jpg')">
+                    <img src="./public/images/fichas-3.jpg" alt="Proyecto 3">
+                    <div class="portfolio-overlay">
+                        <span style="font-size: 0.8rem; opacity: 0.7;">GANADERÍA</span>
+                        <h3 style="font-size: 1.2rem;">Sistema de Tolvas Industriales</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-4.jpg')">
+                    <img src="./public/images/fichas-4.jpg" alt="Proyecto 4">
+                    <div class="portfolio-overlay">
+                        <span style="font-size: 0.8rem; opacity: 0.7;">INSTALACIÓN</span>
+                        <h3 style="font-size: 1.2rem;">Separadores de Alta Resistencia</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-5.jpg')">
+                    <img src="./public/images/fichas-5.jpg" alt="Proyecto 5">
+                    <div class="portfolio-overlay">
+                        <span style="font-size: 0.8rem; opacity: 0.7;">ESTRUCTURAS</span>
+                        <h3 style="font-size: 1.2rem;">Nave Almacén Adaptativa</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-6.jpg')">
+                    <img src="./public/images/fichas-6.jpg" alt="Proyecto 6">
+                    <div class="portfolio-overlay">
+                        <span style="font-size: 0.8rem; opacity: 0.7;">AUTOMATIZACIÓN</span>
+                        <h3 style="font-size: 1.2rem;">Cinta de Distribución Automática</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botones Flotantes -->
+    <div class="floating-contact">
+        <a href="https://wa.me/34685354090" class="float-btn ws" title="WhatsApp" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+    </div>
+
+    <div class="mobile-contact-bar">
+        <a href="https://wa.me/34685354090" class="m-btn m-btn-wa">WhatsApp</a>
+        <a href="tel:+34685354090" class="m-btn m-btn-tel">Llamar</a>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+        <span class="close-modal" style="top: 30px; right: 40px;">&times;</span>
+        <img id="lightboxImg" src="" class="lightbox-img">
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-logo">GANIVA</div>
+                    <p>Líderes en ingeniería agrícola para un campo más moderno y rentable.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Directorio</h4>
+                    <ul>
+                        <li><a href="#">Catálogo General</a></li>
+                        <li><a href="#">Fichas de Proyectos</a></li>
+                        <li><a href="#">Política de Calidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 GANIVA INGENIERÍA AGRÍCOLA. Un proyecto de soluciones reales.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para Visor de PDF -->
+    <div id="pdfModal" class="modal">
+        <span class="close-modal" onclick="closePdfModal()">&times;</span>
+        <div class="modal-content">
+            <iframe id="pdfFrame" src="" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="./src/main.js" type="module"></script>
+    <script>
+        // Modal PDF
+        function openPdfModal(pdfName) {
+            const modal = document.getElementById('pdfModal');
+            const frame = document.getElementById('pdfFrame');
+            frame.src = `./public/${pdfName}`;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePdfModal() {
+            const modal = document.getElementById('pdfModal');
+            const frame = document.getElementById('pdfFrame');
+            frame.src = '';
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Lightbox
+        function openLightbox(imgSrc) {
+            const lb = document.getElementById('lightbox');
+            const lbImg = document.getElementById('lightboxImg');
+            lbImg.src = imgSrc;
+            lb.style.display = 'flex';
+            setTimeout(() => lb.classList.add('active'), 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('active');
+            setTimeout(() => lb.style.display = 'none', 400);
+            document.body.style.overflow = 'auto';
+        }
+
+        // Animación de Contadores
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const speed = target / 100;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + speed);
+                    setTimeout(animateCounters, 20);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+
+        // Animación de Scroll para la Nav
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // AOS Observer con Activación de Contadores
+        let countersStarted = false;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aos-animate');
+                    if (entry.target.classList.contains('stats-grid') && !countersStarted) {
+                        animateCounters();
+                        countersStarted = true;
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

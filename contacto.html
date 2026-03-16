@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | GANIVA Ingeniería</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <style>
+        .contact-form {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #F0F0F0;
+            border-radius: 12px;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: white;
+        }
+        .info-card {
+            background: var(--primary);
+            color: white;
+            padding: 3rem;
+            border-radius: 30px;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .info-card::after {
+            content: 'G';
+            position: absolute;
+            right: -20px;
+            bottom: -20px;
+            font-size: 10rem;
+            font-weight: 900;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body>
+    <div class="urgencia-banner">
+        🚀 Atención Directa por WhatsApp. Tu consulta técnica resuelta hoy.
+    </div>
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-img-container">
+                    <img src="./public/images/logo-ganiva.png" alt="GANIVA Logo">
+                </div>
+                GANIVA <span>AGRICULTURA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="min-height: 40vh; background-image: url('https://images.unsplash.com/photo-1516383740770-fbcc5cbece01?auto=format&fit=crop&q=80&w=1920');">
+        <div class="container">
+            <div class="hero-content" data-aos>
+                <h1>Estamos a su Disposición</h1>
+                <p>Hablemos sobre su próxima mejora o reparación. Estamos listos para aplicar nuestra ingeniería en su terreno.</p>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem;">
+                <div data-aos>
+                    <div class="contact-form">
+                        <h2 style="margin-bottom: 2rem; color: var(--primary-deep);">Envíenos su Consulta</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" class="form-control" placeholder="Ej. Juan Pérez" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" class="form-control" placeholder="juan@ejemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="asunto">Asunto</label>
+                                <select id="asunto" class="form-control">
+                                    <option>Presupuesto Maquinaria Nueva</option>
+                                    <option>Reparación o Refuerzo</option>
+                                    <option>Automatización de Instalación</option>
+                                    <option>Consulta Técnica</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Descripción de Necesidad</label>
+                                <textarea id="mensaje" class="form-control" rows="5" placeholder="Cuéntenos cómo podemos ayudarle..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje Directo</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div data-aos>
+                    <div class="info-card">
+                        <h3 style="margin-bottom: 1.5rem;">Departamento Técnico</h3>
+                        <p style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Javier Sánchez</p>
+                        <p style="margin-bottom: 1rem; opacity: 0.9;">Diseño 3D, desarrollo de piezas y gestión de obra.</p>
+                        <p style="font-weight: 700; font-size: 1.3rem;">📞 +34 685 35 40 90</p>
+                        <p style="opacity: 0.9;">✉️ javiersanchez.ganiva@gmail.com</p>
+                    </div>
+
+                    <div class="info-card" style="background: #6D4C41;">
+                        <h3 style="margin-bottom: 1.5rem; color: #FFFFFF !important;">Departamento Comercial</h3>
+                        <p style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: #FFFFFF !important;">Juan José Sánchez</p>
+                        <p style="margin-bottom: 1rem; opacity: 0.9; color: #FFFFFF !important;">Presupuestos, visitas comerciales y planificación.</p>
+                        <p style="font-weight: 700; font-size: 1.3rem; color: #FFFFFF !important;">📞 +34 675 73 09 28</p>
+                        <p style="opacity: 0.9; color: #FFFFFF !important;">✉️ juanjosesanchez.ganiva@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="mobile-contact-bar">
+        <a href="https://wa.me/34685354090" class="m-btn m-btn-wa">WhatsApp</a>
+        <a href="tel:+34685354090" class="m-btn m-btn-tel">Llamar</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-logo">GANIVA</div>
+                    <p>Líderes en ingeniería agrícola para un campo más moderno y rentable.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 GANIVA INGENIERÍA AGRÍCOLA. Un compromiso con la durabilidad.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/main.js" type="module"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('¡Gracias de parte del equipo de Ganiva! Nos pondremos en contacto con usted a la brevedad.');
+            e.target.reset();
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aos-animate');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
+
+        // Scroll Nav logic
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
