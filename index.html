@@ -15,7 +15,7 @@
         <div class="container">
             <a href="index.html" class="logo">
                 <div class="logo-img-container">
-                    <img src="./public/images/logo-ganiva.png" alt="GANIVA Logo">
+                    <img src="/images/logo-ganiva.png" alt="GANIVA Logo">
                 </div>
                 GANIVA <span>AGRICULTURA</span>
             </a>
@@ -28,10 +28,10 @@
         </div>
     </nav>
 
-    <header class="hero" style="background-image: url('./public/images/hero-bg-final.png');">
+    <header class="hero" style="background-image: url('/images/hero-bg-final.png');">
         <div class="container">
             <div class="hero-content" data-aos>
-                <span class="section-tag" style="color: var(--white); opacity: 0.8;">Ingeniería Industrial Agrícola</span>
+                <span class="section-tag" style="color: var(--primary-light); background: rgba(0,0,0,0.4); display: inline-block; padding: 0.5rem 1rem; border-radius: 4px;">Ingeniería Industrial Agrícola</span>
                 <h1 class="text-reveal"><span>Construyendo el</span> <br><span style="color: var(--primary)">Futuro del Campo</span></h1>
                 <p>Especialistas en estructuras, maquinaria y automatización. Soluciones robustas diseñadas bajo un estándar: <strong>Hecho para durar.</strong></p>
                 <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
@@ -105,43 +105,43 @@
                 <a href="#" class="btn btn-primary" onclick="openPdfModal('FICHAS.pdf')">Ver Fichas Técnicas</a>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-1.jpg')">
-                    <img src="./public/images/fichas-1.jpg" alt="Proyecto 1">
+                <div class="portfolio-item" data-aos onclick="openLightbox('/images/fichas-1.jpg')">
+                    <img src="/images/fichas-1.jpg" alt="Proyecto 1">
                     <div class="portfolio-overlay">
                         <span style="font-size: 0.8rem; opacity: 0.7;">REPARACIÓN CRÍTICA</span>
                         <h3 style="font-size: 1.2rem;">Refuerzo de Chasis de Apero</h3>
                     </div>
                 </div>
-                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-2.jpg')">
-                    <img src="./public/images/fichas-2.jpg" alt="Proyecto 2">
+                <div class="portfolio-item" data-aos onclick="openLightbox('/images/fichas-2.jpg')">
+                    <img src="/images/fichas-2.jpg" alt="Proyecto 2">
                     <div class="portfolio-overlay">
                         <span style="font-size: 0.8rem; opacity: 0.7;">FABRICACIÓN NUEVA</span>
                         <h3 style="font-size: 1.2rem;">Maquinaria de Carga Personalizada</h3>
                     </div>
                 </div>
-                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-3.jpg')">
-                    <img src="./public/images/fichas-3.jpg" alt="Proyecto 3">
+                <div class="portfolio-item" data-aos onclick="openLightbox('/images/fichas-3.jpg')">
+                    <img src="/images/fichas-3.jpg" alt="Proyecto 3">
                     <div class="portfolio-overlay">
                         <span style="font-size: 0.8rem; opacity: 0.7;">GANADERÍA</span>
                         <h3 style="font-size: 1.2rem;">Sistema de Tolvas Industriales</h3>
                     </div>
                 </div>
-                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-4.jpg')">
-                    <img src="./public/images/fichas-4.jpg" alt="Proyecto 4">
+                <div class="portfolio-item" data-aos onclick="openLightbox('/images/fichas-4.jpg')">
+                    <img src="/images/fichas-4.jpg" alt="Proyecto 4">
                     <div class="portfolio-overlay">
                         <span style="font-size: 0.8rem; opacity: 0.7;">INSTALACIÓN</span>
                         <h3 style="font-size: 1.2rem;">Separadores de Alta Resistencia</h3>
                     </div>
                 </div>
-                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-5.jpg')">
-                    <img src="./public/images/fichas-5.jpg" alt="Proyecto 5">
+                <div class="portfolio-item" data-aos onclick="openLightbox('/images/fichas-5.jpg')">
+                    <img src="/images/fichas-5.jpg" alt="Proyecto 5">
                     <div class="portfolio-overlay">
                         <span style="font-size: 0.8rem; opacity: 0.7;">ESTRUCTURAS</span>
                         <h3 style="font-size: 1.2rem;">Nave Almacén Adaptativa</h3>
                     </div>
                 </div>
-                <div class="portfolio-item" data-aos onclick="openLightbox('./public/images/fichas-6.jpg')">
-                    <img src="./public/images/fichas-6.jpg" alt="Proyecto 6">
+                <div class="portfolio-item" data-aos onclick="openLightbox('/images/fichas-6.jpg')">
+                    <img src="/images/fichas-6.jpg" alt="Proyecto 6">
                     <div class="portfolio-overlay">
                         <span style="font-size: 0.8rem; opacity: 0.7;">AUTOMATIZACIÓN</span>
                         <h3 style="font-size: 1.2rem;">Cinta de Distribución Automática</h3>
@@ -214,7 +214,7 @@
         function openPdfModal(pdfName) {
             const modal = document.getElementById('pdfModal');
             const frame = document.getElementById('pdfFrame');
-            frame.src = `./public/${pdfName}`;
+            frame.src = `/${pdfName}`;
             modal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
         }

@@ -14,7 +14,7 @@
         <div class="container">
             <a href="index.html" class="logo">
                 <div class="logo-img-container">
-                    <img src="./public/images/logo-ganiva.png" alt="GANIVA Logo">
+                    <img src="/images/logo-ganiva.png" alt="GANIVA Logo">
                 </div>
                 GANIVA <span>AGRICULTURA</span>
             </a>
@@ -58,8 +58,8 @@
                             <li style="margin-bottom: 0.5rem;">⚡ Adaptación a nuevos aperos</li>
                         </ul>
                     </div>
-                    <div style="order: 2;" class="portfolio-item" onclick="openLightbox('./public/images/fichas-1.jpg')">
-                        <img src="./public/images/fichas-1.jpg" alt="Reparaciones" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow);">
+                    <div style="order: 2;" class="portfolio-item" onclick="openLightbox('/images/fichas-1.jpg')">
+                        <img src="/images/fichas-1.jpg" alt="Reparaciones" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow);">
                     </div>
                 </div>
 
@@ -70,8 +70,8 @@
                         <h3 style="font-size: 2.2rem; margin-bottom: 1.5rem; margin-top: -1.5rem;">Instalaciones y Naves</h3>
                         <p style="font-size: 1.1rem; opacity: 0.8;">Diseñamos espacios que funcionan. Desde el cerramiento más sencillo hasta naves industriales completas, todo calculado para maximizar la seguridad animal y la eficiencia del operario.</p>
                     </div>
-                    <div style="order: 1;" class="portfolio-item" onclick="openLightbox('./public/images/fichas-5.jpg')">
-                        <img src="./public/images/fichas-5.jpg" alt="Instalaciones" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow);">
+                    <div style="order: 1;" class="portfolio-item" onclick="openLightbox('/images/fichas-5.jpg')">
+                        <img src="/images/fichas-5.jpg" alt="Instalaciones" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow);">
                     </div>
                 </div>
 
@@ -82,8 +82,8 @@
                         <h3 style="font-size: 2.2rem; margin-bottom: 1.5rem; margin-top: -1.5rem;">Cadenas de Automatización</h3>
                         <p style="font-size: 1.1rem; opacity: 0.8;">Eliminamos el error humano y el esfuerzo innecesario. Sistemas de reparto de alimento automatizados, tolvas de pesaje y cintas de transporte de servicio pesado.</p>
                     </div>
-                    <div style="order: 2;" class="portfolio-item" onclick="openLightbox('./public/images/fichas-6.jpg')">
-                        <img src="./public/images/fichas-6.jpg" alt="Automatización" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow);">
+                    <div style="order: 2;" class="portfolio-item" onclick="openLightbox('/images/fichas-6.jpg')">
+                        <img src="/images/fichas-6.jpg" alt="Automatización" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow);">
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
         function openPdfModal(pdfName) {
             const modal = document.getElementById('pdfModal');
             const frame = document.getElementById('pdfFrame');
-            frame.src = `./public/${pdfName}`;
+            frame.src = `/${pdfName}`;
             modal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
         }
