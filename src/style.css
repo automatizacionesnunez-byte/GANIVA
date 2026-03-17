@@ -629,19 +629,26 @@ footer a:hover {
 
 @media (max-width: 768px) {
   nav {
-    padding: 1rem 0;
+    padding: 0.8rem 0;
   }
 
   nav .container {
-    flex-direction: column; /* Stack logo y botones */
-    gap: 0.8rem;
-    text-align: center;
+    flex-direction: row; /* Volvemos a horizontal para ahorrar espacio vertical */
+    justify-content: space-between;
+    align-items: center;
   }
 
   .logo {
-    justify-content: center;
-    width: 100%;
-    font-size: 1.3rem; /* Ajuste para que quepa bien */
+    justify-content: flex-start;
+    width: auto;
+    font-size: 1.1rem;
+  }
+
+  /* Ajustamos el Hero para que la nav no tape el texto de "Ingeniería Industrial Agrícola" */
+  .hero {
+    padding-top: 10rem !important; 
+    padding-bottom: 8rem;
+    min-height: auto;
   }
 
   .mobile-contact-bar {
@@ -659,11 +666,10 @@ footer a:hover {
 
   .nav-toggle {
     display: flex !important;
-    width: 100%; /* Ocupa el ancho necesario para centrarse */
+    width: auto; /* Ya no ocupa todo el ancho */
     justify-content: center;
-    padding: 0.5rem;
+    padding: 0.2rem;
     color: var(--primary);
-    transition: var(--transition);
   }
 
   .nav-toggle:active {
