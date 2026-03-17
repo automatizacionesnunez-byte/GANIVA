@@ -169,6 +169,8 @@ nav .container {
   border-radius: 8px;
   padding: 0;
   transition: var(--transition);
+  background: white; /* Asegura visibilidad del logo */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* Hero con Overlay y Animación */
@@ -626,21 +628,46 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+  nav {
+    padding: 1rem 0;
+  }
+
+  nav .container {
+    flex-direction: column; /* Stack logo y botones */
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+    width: 100%;
+    font-size: 1.3rem; /* Ajuste para que quepa bien */
+  }
+
   .mobile-contact-bar {
     display: grid;
   }
   
   footer {
-    padding-bottom: 80px; /* Espacio para la barra fija */
+    padding-bottom: 80px;
   }
 
-  /* ELIMINAMOS el icono flotante de WhatsApp en móvil como pidió el usuario */
+  /* ELIMINAMOS el icono flotante de WhatsApp en móvil */
   .floating-contact {
     display: none !important;
   }
 
   .nav-toggle {
     display: flex !important;
+    width: 100%; /* Ocupa el ancho necesario para centrarse */
+    justify-content: center;
+    padding: 0.5rem;
+    color: var(--primary);
+    transition: var(--transition);
+  }
+
+  .nav-toggle:active {
+    transform: scale(0.9);
   }
 
   .nav-links {
@@ -648,37 +675,45 @@ footer a:hover {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    right: 0;
-    width: 250px; /* Menú lateral derecho en cascada */
+    left: 0;
+    width: 100%;
     background: var(--white);
     padding: 1.5rem;
-    box-shadow: -5px 5px 20px rgba(0,0,0,0.1);
-    gap: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    gap: 1rem;
     z-index: 999;
-    border-radius: 0 0 0 20px;
-    border-left: 1px solid var(--glass-border);
-    border-bottom: 1px solid var(--glass-border);
+    border-top: 1px solid var(--glass-border);
+    animation: slideDown 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .nav-links.active {
     display: flex;
-    animation: slideDown 0.3s ease-out;
   }
 
   @keyframes slideDown {
-    from { opacity: 0; transform: translateY(-10px); }
+    from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
   .nav-links li {
     width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
   }
 
   .nav-links a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     display: block;
-    padding: 0.5rem 0;
-    text-align: right;
+    padding: 0.8rem 0;
+    text-align: center;
+  }
+
+  .nav-links a.active {
+    color: var(--primary);
+    font-weight: 800;
   }
 }
 
@@ -687,14 +722,13 @@ footer a:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  padding: 0.5rem;
   z-index: 1001;
   color: var(--primary-deep);
 }
 
 .nav-toggle svg {
-  width: 30px;
-  height: 30px;
+  width: 32px; /* Más grandes para que se vean bien */
+  height: 32px;
 }
 
 .m-btn {
