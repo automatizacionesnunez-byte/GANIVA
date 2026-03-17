@@ -635,6 +635,57 @@ footer a:hover {
   footer {
     padding-bottom: 80px; /* Espacio para la barra fija */
   }
+
+  .floating-contact {
+    display: none !important; /* Escondemos el icono flotante de WhatsApp en móvil */
+  }
+
+  .nav-toggle {
+    display: flex !important;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    padding: 1rem 1.5rem 2rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    gap: 1.5rem;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    display: block;
+    padding: 0.5rem 0;
+  }
+}
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+  color: var(--primary-deep);
+}
+
+.nav-toggle svg {
+  width: 30px;
+  height: 30px;
 }
 
 .m-btn {
