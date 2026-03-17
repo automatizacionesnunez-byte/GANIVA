@@ -629,15 +629,14 @@ footer a:hover {
   .mobile-contact-bar {
     display: grid;
   }
-  .floating-contact {
-    bottom: 90px !important; /* Desplaza el botón flotante para no solapar */
-  }
+  
   footer {
     padding-bottom: 80px; /* Espacio para la barra fija */
   }
 
+  /* ELIMINAMOS el icono flotante de WhatsApp en móvil como pidió el usuario */
   .floating-contact {
-    display: none !important; /* Escondemos el icono flotante de WhatsApp en móvil */
+    display: none !important;
   }
 
   .nav-toggle {
@@ -649,17 +648,26 @@ footer a:hover {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 250px; /* Menú lateral derecho en cascada */
     background: var(--white);
-    padding: 1rem 1.5rem 2rem;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.1);
     gap: 1.5rem;
     z-index: 999;
+    border-radius: 0 0 0 20px;
+    border-left: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
   }
 
   .nav-links.active {
     display: flex;
+    animation: slideDown 0.3s ease-out;
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   .nav-links li {
@@ -670,6 +678,7 @@ footer a:hover {
     font-size: 1.1rem;
     display: block;
     padding: 0.5rem 0;
+    text-align: right;
   }
 }
 
